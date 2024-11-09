@@ -1,0 +1,23 @@
+body {
+  font-family: Arial, Helvetica, sans-serif
+}
+
+h1 {
+  font-family: "Satisfy", cursive;
+}
+
+div > p {
+  display: none;
+
+}
+
+div:hover > p {
+  display: block;
+  color: white;
+  background-color: red;
+  width: 170px;
+}
+
+div:hover {
+  color: red;
+}

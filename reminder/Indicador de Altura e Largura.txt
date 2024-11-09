@@ -1,0 +1,8 @@
+Anotação de ALTURA é LARGURA
+
+/*
+
+height: ; = determina a altura em px.
+width: ; = determina a largura em px.
+
+*/

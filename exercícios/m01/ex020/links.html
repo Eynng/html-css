@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Links</title>
+  <style>
+
+/*     SELETORES 
+       #  = id    
+       .  = class
+       :  = pseudo-class
+       :: = pseudo-element
+       >  = children
+
+*/
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    a {
+      text-decoration: none;
+      color: red;
+    }
+
+    a:visited {
+      color: darkred;
+    }
+
+    a:hover {
+      color: black;
+      text-decoration: underline;
+    }
+
+    a:active {
+      color: yellow;
+    }
+
+    .especial {
+      background-color: rgba(255, 0, 0, 0.256);
+
+    }
+
+    .especial::before {
+      content: '»';
+    }
+
+    .especial::after {
+      content: '«';
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Personalizando Links</h1>
+  <ul>
+    <li><a href="https://www.youtube.com/@EYNNGFC" target="_blank" class="especial">Repositório Github</a></li>
+    <li><a href="https://www.youtube.com/@EYNNGFC" target="_blank" class="especial">Canal do YouTube</a></li>
+    <li><a href="https://www.youtube.com/@EYNNGFC" target="_blank" class="especial">Site do CursoEmVideo</a></li>
+  </ul>
+  
+</body>
+</html>

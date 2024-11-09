@@ -1,0 +1,14 @@
+@font-face {
+  font-family:"Feeling Lovely";
+  src: url("fonts/Feeling Lovely.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-family:'Feeling Lovely', Times, serif ;
+  font-size: 3em;
+}

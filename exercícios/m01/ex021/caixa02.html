@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grouping Tags</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: grey;
+      margin: 0px;
+    }
+
+    h1 {
+      box-shadow: 2px 1px 14px 6px rgba(0, 0, 0, 0.479)
+    }
+
+    header {
+      background-color: white;
+      padding: 10px;
+      margin: 10px;
+      box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.479);
+      border-radius: 0px 0px 20px 20px;
+    }
+
+    nav {
+      background-color: rgb(131, 131, 131);
+      padding: 5px;
+      text-align: right;
+      box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.479);
+      
+    }
+
+    nav > a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      margin-right: 30px;
+    }
+
+    nav > a:hover {
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+    }
+
+    main {
+      background-color: white;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 0px 10px;
+      box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.479);
+    }
+
+    article {
+      background-color: darkgray;
+      padding: 5px;
+      border-radius: 0px 10px;
+    }
+
+    article > aside {
+      background-color: rgb(100, 100, 100);
+      text-align: center;
+      margin: 10px;
+    }
+
+    footer {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 4px;
+      margin: 0px;
+    }
+
+    footer > p {
+      margin: 0px;
+    }
+
+    div#bola {
+      width: 100px;
+      height: 100px;
+      background-color: white;
+      margin: 10px;
+      border-radius: 50%;
+    }
+
+    .logo {
+      width: 250px;
+      
+
+    }
+  </style>
+</head>
+<body>
+  <header>
+      <img class="logo" src="logo/Gaules_logo_blue.svg.png" alt="">
+    <h1>Eynng's Sites</h1>
+    <nav>
+      <a href="#">Ínicio</a>
+      <a href="#">Mais</a>
+      <a href="#">Sobre</a>
+      <a href="#">Contatos</a>
+      <a href="#">Ajuda</a>
+    </nav>
+  </header>
+  <main>
+    <section id="inicio">
+      <p>Esportes Política Tecnologia</p>
+
+    </section>
+
+    <section id="fotos">
+      <article>
+        <h2>Notícias sobre Silvio Santos</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam autem suscipit consectetur molestias quam, labore aliquam sint hic animi ipsa veritatis cumque facilis temporibus, neque, dolore at recusandae tempore cum!</p>
+        <aside>Artigo escrito por Esdras Ramon</aside>
+      </article>
+    </section>
+
+  </main>
+  <footer>
+    <p>Desenvolvido pelo CursoemVideo</p>
+  </footer>
+  <div id="bola"></div>
+
+  
+</body>
+</html>

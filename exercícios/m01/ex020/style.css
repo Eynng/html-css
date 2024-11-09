@@ -1,0 +1,23 @@
+body {
+  font-family: "Satisfy", cursive;
+}
+
+/*
+
+height: ; = determina a altura em px.
+width:  ; = determina a largura em px.
+
+*/
+
+div {
+  display: inline-block;
+  background-color: rgb(133, 133, 133);
+  text-align: center;
+  border: 2px solid black;
+  height: 200px;
+  width: 200px;
+}
+
+div:hover {
+  background-color: rgb(105, 105, 105);
+}

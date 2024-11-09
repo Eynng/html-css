@@ -1,0 +1,15 @@
+
+                       BOX MODELS
+         BOX-LEVEL                      INLINE-LEVEL
+                           
+<div>                           <span>
+<h1>-<h6>                       <a>
+<p>                             <code>
+<main>                          <small>
+<header>                        <strong>
+<nav>                           <em>
+<article>                       <sup>-<sub>
+<aside>                         <label>
+<footer>                        <button>
+<form>                          <input>
+<video>                         <select>

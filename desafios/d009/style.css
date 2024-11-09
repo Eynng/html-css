@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+  background-color: rgb(30, 30, 30);
+}
+
+h1 {
+  color: rgb(252, 252, 252);
+}
+
+p {
+  color: aliceblue;
+}
+
+a {
+  color: aliceblue;
+}

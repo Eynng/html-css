@@ -38,6 +38,7 @@ header > h1 {
 
 header > p {
   padding-bottom: 50px;
+  font-size: 1vw;
 }
 
 header a,
@@ -67,7 +68,7 @@ section {
   padding-top: 10vh;
   padding-bottom: 10vh;
   line-height: 2em;
-  padding-left: 20px;
+  padding-left: 25px;
   font-family: var(--fonte3);
   font-size: 3.5vw;
 }

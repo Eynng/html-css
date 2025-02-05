@@ -26,6 +26,12 @@ body {
 .logo {
   padding-top: 40px;
   height: 5vh;
+}
+
+.logo2 {
+  padding-right: 40px;
+  margin-left: 40px;
+  width: 40px;
   
 }
 
@@ -75,6 +81,7 @@ section h1:hover {
 
 section > h1 {
   font-size: 1.5em;
+  text-shadow: 2px 2px 1px white;
 }
 
 section > p {
@@ -84,13 +91,17 @@ section > p {
 
 section.imagen h1,
 section.imagen p {
-  background-color: rgba(0, 0, 0, 0.363);
+  background-color: rgba(0, 0, 0, 0.425);
   padding-left: 10px;
 }
 
 section.imagen a {
   text-decoration: none;
   color: rgb(255, 0, 0);
+}
+
+section.imagen {
+  box-shadow: inset 7px 7px 20px 0px black;
 }
 
 section#img01 {

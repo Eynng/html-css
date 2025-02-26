@@ -10,27 +10,22 @@
     }
 
     table {
+      height: 400px;
       width: 400px;
       border-collapse: collapse;
-      border: 5px solid rgb(0, 212, 240);
-    }
-
-    tr {
-      background-color: rgba(128, 128, 128, 0.384);
-    }
-
-    tr.linha {
-      background-color: green;
     }
 
     td {
       border: 1px solid black;
       padding: 8px;
+      text-align: center; /*Alinhamento Horizontal*/
+      vertical-align: middle; /*Alinhamento Vertical*/
     }
 
-    td.dado {
-      background-color: rgb(255, 0, 0);
+    .numero {
+      text-align: right;
     }
+
   </style>
 </head>
 <body>
@@ -54,12 +49,12 @@
     <tr>
       <td>A2</td>
       <td>B2</td>
-      <td>C2</td>
+      <td class="numero">C2</td>
     </tr>
     <tr>
       <td>A3</td>
       <td class="dado">B3</td>
-      <td>C3</td>
+      <td class="numero">C3</td>
     </tr>
     <tr>
       <td>A4</td>

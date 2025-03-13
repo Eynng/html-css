@@ -5,13 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tabelas</title>
     <style>
+
+      * {
+         padding: 0px;
+         margin: 0px;
+         font-size: 1em;
+      }
       body {
         font-family: Arial, Helvetica, sans-serif;
         background-color: rgb(27, 27, 27);
         color: rgb(109, 109, 109);
       }
 
+      footer {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+        position: relative;
+        color: rgb(41, 41, 41);
+
+        background-color: rgb(68, 68, 68);
+      }
+
       h1 {
+        font-size: 3em;
         text-align: center;
       }
 
@@ -23,13 +40,21 @@
         color: rgb(255, 75, 75);
       }
 
+      .head {
+        background-color: rgb(68, 68, 68);
+        color: rgb(0, 0, 0);
+      }
+
       table {
+        padding: 100px;
+        margin: 0px;
         height: 100px;
         width: 800px;
         border-collapse: collapse;
       }
 
       td {
+        margin: 0px;
         border: 1px solid rgb(41, 41, 41);
         padding: 8px;
         text-align: center; /*Alinhamento Horizontal*/
@@ -38,13 +63,19 @@
 
       .numero {
         text-align: right;
+        padding: 0px;
+        margin: 0px;
       }
     </style>
   </head>
-  <body>
-    <select name="Brasil" id="brasil"></select>
 
-    <h1>Counter Striker 2</h1>
+  <body>
+
+    <header>
+
+      <h1>Counter Striker 2</h1>
+  
+    </header>
 
     <!--
     HIERARQUIA DE TABELAS SIMPLES
@@ -52,17 +83,17 @@
     TABLE = TABELA
       TABLE ROW = LINHA DE TABELA
         TABLE HEADER = CABEÇALHO DE TABELA
-          TABLE DATA = DADOS DE TABELA -->
+          TABLE DATA = DADOS DE TABELA <select name="Brasil" id="brasil"></select> -->
     <table>
       <tr>
-        <td>Rank</td>
-        <td>Pais</td>
-        <td>Team</td>
-        <td>Players</td>
-        <td>Maps</td>
-        <td>K-D Diff</td>
-        <td>K/D</td>
-        <td>RATING</td>
+        <td class="head">Rank</td>
+        <td class="head">Pais</td>
+        <td class="head">Team</td>
+        <td class="head">Players</td>
+        <td class="head">Maps</td>
+        <td class="head">K-D Diff</td>
+        <td class="head">K/D</td>
+        <td class="head">RATING</td>
       </tr>
 
       <!--PRIMEIRA LINHA-->
@@ -181,4 +212,8 @@
       </tr>
     </table>
   </body>
+
+  <footer>
+    desenvolvido por Esdras Ramon
+  </footer>
 </html>

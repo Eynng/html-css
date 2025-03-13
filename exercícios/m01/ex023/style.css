@@ -5,8 +5,8 @@
 }
 body {
  font-family: Arial, Helvetica, sans-serif;
- background-color: rgb(27, 27, 27);
- color: rgb(109, 109, 109);
+ background: linear-gradient(to right, rgb(255, 166, 0), rgb(0, 0, 255));
+ color: rgb(216, 216, 216);
 }
 
 header {
@@ -15,14 +15,29 @@ header {
  margin: 0px;
 }
 
+.logo {
+  height: 3vw;
+  
+}
+
+.eternal {
+  height: 30px;
+  width: 50px;
+}
+
+.mongolz {
+  width: 45px;
+  height: 50px;
+}
+
 footer {
  padding-top: 10px;
  padding-bottom: 10px;
  text-align: center;
  position: relative;
- color: rgb(0, 0, 0);
+ color: rgba(0, 0, 0, 0.726);
 
- background-color: rgb(68, 68, 68);
+ background-color: rgba(255, 255, 255, 0.384);
 }
 
 h1 {
@@ -39,25 +54,25 @@ h1 {
 }
 
 .head {
- background-color: rgb(68, 68, 68);
+ background-color: rgba(255, 255, 255, 0.178);
  color: rgb(0, 0, 0);
 }
 
 table {
  padding: auto;
  margin: auto;
- margin-top: 70px;
  margin-bottom: 200px;
 
- height: 100px;
- width: 800px;
+ height: 50vh;
+ width: 50vw;
+ 
 
  border-collapse: collapse;
 }
 
 td {
  margin: 0px;
- border: 1px solid rgb(41, 41, 41);
+ /*border: 1px solid rgb(41, 41, 41)*/
  padding: 8px;
  text-align: center; /*Alinhamento Horizontal*/
  vertical-align: middle; /*Alinhamento Vertical*/

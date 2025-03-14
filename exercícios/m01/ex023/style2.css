@@ -105,6 +105,12 @@ header {
   padding-bottom: 106px;
 }
 
+.glg {
+
+  height: 300px;
+  width: 540px;
+}
+
 footer {
   padding-top: 10px;
   padding-bottom: 10px;

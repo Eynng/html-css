@@ -48,6 +48,8 @@ header {
   color: rgba(255, 255, 255, 0.5);
 }
 
+/* ICONE DAS TABELAS */
+
 .eternal {
   height: 30px;
   width: 50px;
@@ -91,6 +93,16 @@ header {
 .vitality {
   width: 40px;
   height: 45px;
+}
+
+/* ICONE DAS PAGINAS */
+
+.eternalg {
+  height: 300px;
+  width: 535px;
+
+  padding-top: 106px;
+  padding-bottom: 106px;
 }
 
 footer {

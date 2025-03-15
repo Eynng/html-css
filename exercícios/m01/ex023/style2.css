@@ -111,6 +111,12 @@ header {
   width: 540px;
 }
 
+
+.furiag {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 footer {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -153,8 +159,8 @@ p {
 
 table {
   padding: auto;
-  margin-top: 80px;
-  margin-bottom: 98px;
+  margin-top: 0px;
+  margin-bottom: 63px;
 
   height: 50vh;
   width: 50vw;

@@ -43,11 +43,10 @@ header {
 }
 
 .nomes {
-  padding-top: 0px;
-  padding-bottom: 100px;
+  padding-top: 10px;
+  padding-bottom: 15px;
   color: rgba(255, 255, 255, 0.5);
 }
-
 /* ICONE DAS TABELAS */
 
 .eternal {
@@ -98,28 +97,26 @@ header {
 /* ICONE DAS PAGINAS */
 
 .eternalg {
-  height: 300px;
-  width: 535px;
 
-  padding-top: 106px;
-  padding-bottom: 106px;
 }
 
 .glg {
 
-  height: 300px;
-  width: 540px;
 }
 
 
 .furiag {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  
+}
+
+.spiritg {
+  
+
 }
 
 footer {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   text-align: center;
   position: relative;
   color: rgba(0, 0, 0, 0.726);
@@ -159,8 +156,8 @@ p {
 
 table {
   padding: auto;
-  margin-top: 0px;
-  margin-bottom: 63px;
+  margin-top: 50px;
+  margin-bottom: 90px;
 
   height: 50vh;
   width: 50vw;
@@ -174,6 +171,10 @@ td {
   padding: 8px;
   text-align: center; /*Alinhamento Horizontal*/
   vertical-align: middle; /*Alinhamento Vertical*/
+}
+
+#border {
+  border: none;
 }
 
 .numero {

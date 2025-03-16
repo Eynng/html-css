@@ -36,6 +36,17 @@ header {
   
 }
 
+button {
+  border: none;
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+
+  padding: auto;
+  margin: auto;
+  
+}
+
 .logo {
   display: flex;
  justify-items: center;

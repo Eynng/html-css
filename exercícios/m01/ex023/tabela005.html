@@ -27,22 +27,51 @@
       font-size: 1.3em;
       padding: 5px;
     }
+
+    col.cnome, col.csexo {
+      background-color: rgb(0, 255, 157);
+    }
+
+    .vermelho {
+      background-color: red;
+    }
+
+    .amarelo {
+      background-color: yellow;
+    }
+    
   </style>
 
   <body>
     <h1> Exercício de tabelas </h1>
 
     <table>
+
+      <colgroup> <!--EXEMPLOS DE COLGROUP-->
+
+        <col class="cnome"> <!--CLASSES PARA AS COLUNAS COM NOMES -->
+        <col class="csexo">
+
+        <col class="vermelho"> <!--CLASSES PARA AS COLUNAS COM CORES -->
+
+        <col class="amarelo" span="2"> <!--CLASSES PARA AS COLUNAS COM SPAN -->
+
+
+
+      </colgroup>
+
+      
       <caption> Resultados </caption>
 
       <thead>
 
         <tr>
 
-          <th>Nome</th>
-          <th>Sexo</th>
-          <th>Idade</th>
-          <th>Profissão</th>
+          <th scope="col">Nome</th>
+          <th scope="col">Sexo</th>
+          <th scope="col">Idade</th>
+          <th scope="col">Profissão</th>
+          <th scope="col">Estado</th>
 
         </tr>
 
@@ -52,50 +81,56 @@
 
         <tr>
 
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>Ana Maria</td>
+          <td>F</td>
+          <td>25</td>
+          <td>Jornalista</td>
+          <td>SP</td>
 
         </tr>
         <tr>
 
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>Claudio</td>
+          <td>M</td>
+          <td>28</td>
+          <td>Programador</td>
+          <td>PE</td>
 
         </tr>
         <tr>
 
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>Gustavo</td>
+          <td>M</td>
+          <td>42</td>
+          <td>Professor</td>
+          <td>SP</td>
 
         </tr>
         <tr>
 
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>Hélio</td>
+          <td>M</td>
+          <td>19</td>
+          <td>Vendedor</td>
+          <td>PA</td>
 
         </tr>
         <tr>
 
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>Maria</td>
+          <td>F</td>
+          <td>39</td>
+          <td>Médica</td>
+          <td>RJ</td>
 
         </tr>
         <tr>
 
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>Otavio</td>
+          <td>M</td>
+          <td>22</td>
+          <td>Nutricionista</td>
+          <td>PE</td>
 
         </tr>
 

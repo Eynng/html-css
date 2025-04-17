@@ -4,71 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gaules | Cadastro</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<style>
-  * {
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 10px;
-    margin: 10px;
-  }
 
-  body {
-    background: linear-gradient( rgba(65, 115, 172, 0.808), rgba(65, 115, 172, 0.534));
-    background-attachment: fixed;
-  }
-
-  p#botão {
-    text-align: center;
-    padding: 10px;
-    margin: 10px;
-  }
-
-  p#botão input {
-    background-color: rgba(65, 115, 172, 0.808);
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-  }
-
-  p#botão input:hover {
-    cursor: pointer;
-    background-color: rgba(39, 68, 102, 0.808);
-  }
-
-  fieldset {
-    margin: auto;
-    border-radius: 50px;
-    text-align: center;
-    background-color: rgba(65, 115, 172, 0.774);
-    border: none;
-    height: 445px;
-    width: 500px;
-  }
-
-  label {
-    color: white;
-    font-weight: bold;
-  }
-
-  h1 {
-    text-align: center;
-    color: white;
-  }
-
-  input {
-    border: 0px;
-    border-radius: 15px;
-    text-align: center;
-    
-  }
-
-</style>
 <body>
+
   <header>
-    <img src="" alt="logo">
+    <img class="logo" src="imagem/Gaules logo branca.png" alt="logo">
   </header>
+
   <h1>Cadastro de conta</h1>
+
+  <p id="botão">
+    <a href="test3.html"><input  type="button" value="ou fazer login"></a>
+  </p>
+
+
   <form action="cadastro.php" method="get" autocomplete="on" required>
 
     <fieldset>
@@ -82,22 +33,28 @@
         <input type="text" name="usu" id="iusu" required autocomplete="username" minlength="5" maxlength="15" placeholder="nome de usuário">
       </p>
       <p>
-        <label for="iemail">E-MAIL :</label>
+        <label for="iemail">E-mail :</label>
         <input type="email" name="email" id="iemail" required autocomplete="email" placeholder="endereço de email">
       </p>
       <p>
-        <label for="isenha">SENHA :</label>
+        <label for="isenha">Senha :</label>
         <input type="password" name="senha" id="isenha" minlength="6" maxlength="15" required placeholder="mínimo 6 digitos" >
       </p>
       <p>
-        <label for="isenha2">REPETIR SENHA :</label>
-        <input type="password" name="senha2" id="isenha2" required placeholder="repetir senha">
+        <label for="isenha2">Repetir Senha :</label>
+        <input type="password" name="senha2" id="isenha2" minlength="6" maxlength="15" placeholder="repetir senha">
       </p>
+      <p>
+        <label for="idata">Data de Nascimento :</label>
+        <input type="date" name="data" id="idata" required >
+      </p>
+
     </fieldset>
 
     <p id="botão">
-      <input type="submit" value="Criar">
       <input type="reset" value="Limpar">
+      <input type="submit" value="Criar">
+      
     </p>
 
   </form>

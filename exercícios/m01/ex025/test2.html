@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cadastre-se aqui</title>
+  <title>Gaules | Cadastro</title>
 </head>
 <style>
   * {
@@ -13,7 +13,14 @@
   }
 
   body {
-    background-color: rgb(255, 255, 255);
+    background: linear-gradient( rgba(65, 115, 172, 0.808), rgba(65, 115, 172, 0.534));
+    background-attachment: fixed;
+  }
+
+  p#botão {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
   }
 
   p#botão input {
@@ -30,21 +37,23 @@
   }
 
   fieldset {
-    border-radius: 0px;
+    margin: auto;
+    border-radius: 50px;
     text-align: center;
     background-color: rgba(65, 115, 172, 0.774);
     border: none;
-    padding: 0px;
-    margin: 0px;
+    height: 445px;
+    width: 500px;
   }
 
   label {
     color: white;
+    font-weight: bold;
   }
 
   h1 {
     text-align: center;
-    color: rgba(65, 115, 172, 0.808);
+    color: white;
   }
 
   input {
@@ -56,17 +65,20 @@
 
 </style>
 <body>
+  <header>
+    <img src="" alt="logo">
+  </header>
   <h1>Cadastro de conta</h1>
   <form action="cadastro.php" method="get" autocomplete="on" required>
 
     <fieldset>
       
       <p>
-        <label for="inome">NOME E SOBRENOME :</label>
+        <label for="inome">Nome completo:</label>
         <input type="text" name="Nome" id="inome" required autocomplete="name" placeholder="nome completo">
       </p>
       <p>
-        <label for="iusu">USUÁRIO :</label>
+        <label for="iusu">Usuário :</label>
         <input type="text" name="usu" id="iusu" required autocomplete="username" minlength="5" maxlength="15" placeholder="nome de usuário">
       </p>
       <p>

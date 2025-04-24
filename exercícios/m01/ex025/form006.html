@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+</head>
+<body>
+  <h1>Exemplo de formulário</h1>
+  <form action="cadastro.php" method="get" autocomplete="on">
+
+    <!-- Controle de seleção de cores input:color -->
+
+    <p>
+      <label for="icor">Cor:</label>
+      <input type="color" name="cor" id="icor" value="#00ff00">
+    </p>
+
+    <!-- Controle de satisfação input:range -->
+
+    <p>
+      <label for="inivel">Nível de satisfação:</label>
+      <input type="range" name="nivel" id="inivel" min="1" max="5" value="3">
+    </p>
+
+    <!-- Controle de seleção de fotos/arquivos input:file -->
+
+    <p>
+      <label for="ifoto">Foto do perfil:</label>
+      <input type="file" name="Foto" id="ifoto">
+    </p>
+
+    <!-- Controle de seleção caixa input:checkbox -->
+
+    <p>
+      <input type="checkbox" name="box" id="ibox">
+      <label for="ibox">Autorização de criação de conta:</label>
+    </p>
+
+
+    <p>
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Limpar">
+    </p>
+
+  </form>
+  
+</body>
+</html>

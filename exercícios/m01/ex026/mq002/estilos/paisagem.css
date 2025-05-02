@@ -3,6 +3,6 @@
 /* Configurações para telas em paisagem */
 
 body {
-  background-image: url(../image/cev-landscape.jpg);
-  background-position: left bottom;
+  background-image: url(../image/cev-portrait.jpg);
+  background-position: center bottom;
 }

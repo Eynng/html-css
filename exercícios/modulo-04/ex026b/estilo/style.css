@@ -19,7 +19,7 @@ body, html {
 }
 
 header {
-  background-color: seashell;
+  background-color: rgb(255, 255, 255);
   padding: 40px;
   margin: 0px;
 }
@@ -33,7 +33,7 @@ nav ul li {
 }
 
 nav {
-  background-color: royalblue;
+  background-color: rgb(0, 89, 255);
 }
 
 a {
@@ -43,9 +43,15 @@ a {
 }
 
 #logo {
-  color: rgb(255, 0, 0);
+  color: rgb(0, 89, 255);
   font-size:3em;
 
+}
+
+img {
+  width: 40vw;
+  display: block;
+  margin: auto
 }
 
 h1 {
@@ -64,3 +70,15 @@ div#container {
  margin: 50px 200px 0px 200px;
 
 }
+
+footer {
+  background-color: white;
+  padding: 10px;
+  margin: 0px;
+  text-align: center;
+}
+
+footer a {
+  color: rgb(0, 89, 255);
+}
+

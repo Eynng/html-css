@@ -7,14 +7,29 @@
 }
 
 @media screen and (min-width: 768px) and (max-width:992px) {
+  body {
+    background-image: url(../image/back-tablet.jpg);
+  }
+
+  main {
+    width: 600px;
+  }
+
 
 }
 
 @media screen and (min-width: 992px) and (max-width:1200px) {
+  body {
+    background-image: url(../image/back-pc.jpg);
+  }
 
 }
 
 @media screen and (min-width: 1200px) {
+
+  body {
+    background-image: url(../image/back-tv.jpg);
+  }
 
 
 }

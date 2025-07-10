@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,358 +8,109 @@
     <style>
       div.container {
         background-color: salmon;
-
         display: flex;
-        flex-flow: row wrap;
-        
-        
+        flex-flow: row nowrap;
+
+        padding: 10px;
+        margin: 10px;
       }
 
       div.item {
-        background-color: aquamarine;
+        background-color: lightblue;
+        border: 1px solid black;
+        text-align: center;
+        flex-basis: 250px;
+        flex-shrink: 1;
+        flex-grow: 1;
+        
+      }
+
+      div.item1 {
+        background-color: lightblue;
         border: 1px solid black;
         text-align: center;
         flex-basis: 150px;
-
+        flex-shrink: 1;
+        flex-grow: 0;
         
       }
+      div.item2 {
+        background-color: lightblue;
+        border: 1px solid black;
+        text-align: center;
+        flex-basis: 150px;
+        flex-shrink: 1;
+        flex-grow: 2;
+        
+      }
+      div.item3 {
+        background-color: lightblue;
+        border: 1px solid black;
+        text-align: center;
+        flex-basis:150px;
+        flex-shrink: 1;
+        flex-grow: 1;
+        
+      }
+
+      div.item4 {
+        background-color: lightblue;
+        border: 1px solid black;
+        text-align: center;
+        flex-basis:150px;
+        flex-shrink: 0;
+        flex-grow: 1 ;
+        
+      }
+
+      div.item5 {
+        background-color: lightblue;
+        border: 1px solid black;
+        text-align: center;
+        flex-basis:150px;
+        flex-shrink: 1;
+        flex-grow: 2;
+        
+      }
+
+      div.item6 {
+        background-color: lightblue;
+        border: 1px solid black;
+        text-align: center;
+        flex-basis:150px;
+        flex-shrink: 2;
+        flex-grow: 0;
+        
+      }
+      
     </style>
+
   </head>
 
   <body>
+
     <div class="container">
 
       <div class="item">A</div>
-      <div class="item">Boutro conteúdo</div>
+      <div class="item">B</div>
       <div class="item">C</div>
-      <div class="item">D</div>
-      <div class="item">Conteúdo um pouco maior</div>
-      <div class="item">F</div>
-      <div class="item">G</div>
-      <div class="item">Contéudo muito maior ainda</div>
-      <div class="item">I</div>
-      <div class="item">J</div>
-      <div class="item">K</div>
-      <div class="item">L</div>
-      <div class="item">M</div>
-      <div class="item">N</div>
-      <div class="item">O</div>
-      <div class="item">P</div>
-      <div class="item">Q</div>
-      <div class="item">R</div>
-      <div class="item">S</div>
-      <div class="item">T</div>
-      <div class="item">U</div>
-      <div class="item">V</div>
-      <div class="item">W</div>
-      <div class="item">X</div>
-      <div class="item">Y</div>
-      <div class="item">Z</div>
       
     </div>
+
     <div class="container">
 
-      <div class="item">A</div>
-      <div class="item">Boutro conteúdo</div>
-      <div class="item">C</div>
-      <div class="item">D</div>
-      <div class="item">Conteúdo um pouco maior</div>
-      <div class="item">F</div>
-      <div class="item">G</div>
-      <div class="item">Contéudo muito maior ainda</div>
-      <div class="item">I</div>
-      <div class="item">J</div>
-      <div class="item">K</div>
-      <div class="item">L</div>
-      <div class="item">M</div>
-      <div class="item">N</div>
-      <div class="item">O</div>
-      <div class="item">P</div>
-      <div class="item">Q</div>
-      <div class="item">R</div>
-      <div class="item">S</div>
-      <div class="item">T</div>
-      <div class="item">U</div>
-      <div class="item">V</div>
-      <div class="item">W</div>
-      <div class="item">X</div>
-      <div class="item">Y</div>
-      <div class="item">Z</div>
+      <div class="item1">A</div>
+      <div class="item2">B</div>
+      <div class="item3">C</div>
       
     </div>
+
     <div class="container">
 
-      <div class="item">A</div>
-      <div class="item">Boutro conteúdo</div>
-      <div class="item">C</div>
-      <div class="item">D</div>
-      <div class="item">Conteúdo um pouco maior</div>
-      <div class="item">F</div>
-      <div class="item">G</div>
-      <div class="item">Contéudo muito maior ainda</div>
-      <div class="item">I</div>
-      <div class="item">J</div>
-      <div class="item">K</div>
-      <div class="item">L</div>
-      <div class="item">M</div>
-      <div class="item">N</div>
-      <div class="item">O</div>
-      <div class="item">P</div>
-      <div class="item">Q</div>
-      <div class="item">R</div>
-      <div class="item">S</div>
-      <div class="item">T</div>
-      <div class="item">U</div>
-      <div class="item">V</div>
-      <div class="item">W</div>
-      <div class="item">X</div>
-      <div class="item">Y</div>
-      <div class="item">Z</div>
+      <div class="item4">A</div>
+      <div class="item5">B</div>
+      <div class="item6">C</div>
       
     </div>
-    <div class="container">
-
-      <div class="item">A</div>
-      <div class="item">Boutro conteúdo</div>
-      <div class="item">C</div>
-      <div class="item">D</div>
-      <div class="item">Conteúdo um pouco maior</div>
-      <div class="item">F</div>
-      <div class="item">G</div>
-      <div class="item">Contéudo muito maior ainda</div>
-      <div class="item">I</div>
-      <div class="item">J</div>
-      <div class="item">K</div>
-      <div class="item">L</div>
-      <div class="item">M</div>
-      <div class="item">N</div>
-      <div class="item">O</div>
-      <div class="item">P</div>
-      <div class="item">Q</div>
-      <div class="item">R</div>
-      <div class="item">S</div>
-      <div class="item">T</div>
-      <div class="item">U</div>
-      <div class="item">V</div>
-      <div class="item">W</div>
-      <div class="item">X</div>
-      <div class="item">Y</div>
-      <div class="item">Z</div>
-      
-    </div>
-    <div class="container">
-
-      <div class="item">A</div>
-      <div class="item">Boutro conteúdo</div>
-      <div class="item">C</div>
-      <div class="item">D</div>
-      <div class="item">Conteúdo um pouco maior</div>
-      <div class="item">F</div>
-      <div class="item">G</div>
-      <div class="item">Contéudo muito maior ainda</div>
-      <div class="item">I</div>
-      <div class="item">J</div>
-      <div class="item">K</div>
-      <div class="item">L</div>
-      <div class="item">M</div>
-      <div class="item">N</div>
-      <div class="item">O</div>
-      <div class="item">P</div>
-      <div class="item">Q</div>
-      <div class="item">R</div>
-      <div class="item">S</div>
-      <div class="item">T</div>
-      <div class="item">U</div>
-      <div class="item">V</div>
-      <div class="item">W</div>
-      <div class="item">X</div>
-      <div class="item">Y</div>
-      <div class="item">Z</div>
-      
-    </div>
-    <div class="container">
-
-      <div class="item">A</div>
-      <div class="item">Boutro conteúdo</div>
-      <div class="item">C</div>
-      <div class="item">D</div>
-      <div class="item">Conteúdo um pouco maior</div>
-      <div class="item">F</div>
-      <div class="item">G</div>
-      <div class="item">Contéudo muito maior ainda</div>
-      <div class="item">I</div>
-      <div class="item">J</div>
-      <div class="item">K</div>
-      <div class="item">L</div>
-      <div class="item">M</div>
-      <div class="item">N</div>
-      <div class="item">O</div>
-      <div class="item">P</div>
-      <div class="item">Q</div>
-      <div class="item">R</div>
-      <div class="item">S</div>
-      <div class="item">T</div>
-      <div class="item">U</div>
-      <div class="item">V</div>
-      <div class="item">W</div>
-      <div class="item">X</div>
-      <div class="item">Y</div>
-      <div class="item">Z</div>
-      
-    </div>
-    <div class="container">
-
-      <div class="item">A</div>
-      <div class="item">Boutro conteúdo</div>
-      <div class="item">C</div>
-      <div class="item">D</div>
-      <div class="item">Conteúdo um pouco maior</div>
-      <div class="item">F</div>
-      <div class="item">G</div>
-      <div class="item">Contéudo muito maior ainda</div>
-      <div class="item">I</div>
-      <div class="item">J</div>
-      <div class="item">K</div>
-      <div class="item">L</div>
-      <div class="item">M</div>
-      <div class="item">N</div>
-      <div class="item">O</div>
-      <div class="item">P</div>
-      <div class="item">Q</div>
-      <div class="item">R</div>
-      <div class="item">S</div>
-      <div class="item">T</div>
-      <div class="item">U</div>
-      <div class="item">V</div>
-      <div class="item">W</div>
-      <div class="item">X</div>
-      <div class="item">Y</div>
-      <div class="item">Z</div>
-      
-    </div>
-    <div class="container">
-
-      <div class="item">A</div>
-      <div class="item">Boutro conteúdo</div>
-      <div class="item">C</div>
-      <div class="item">D</div>
-      <div class="item">Conteúdo um pouco maior</div>
-      <div class="item">F</div>
-      <div class="item">G</div>
-      <div class="item">Contéudo muito maior ainda</div>
-      <div class="item">I</div>
-      <div class="item">J</div>
-      <div class="item">K</div>
-      <div class="item">L</div>
-      <div class="item">M</div>
-      <div class="item">N</div>
-      <div class="item">O</div>
-      <div class="item">P</div>
-      <div class="item">Q</div>
-      <div class="item">R</div>
-      <div class="item">S</div>
-      <div class="item">T</div>
-      <div class="item">U</div>
-      <div class="item">V</div>
-      <div class="item">W</div>
-      <div class="item">X</div>
-      <div class="item">Y</div>
-      <div class="item">Z</div>
-      
-    </div>
-    <div class="container">
-
-      <div class="item">A</div>
-      <div class="item">Boutro conteúdo</div>
-      <div class="item">C</div>
-      <div class="item">D</div>
-      <div class="item">Conteúdo um pouco maior</div>
-      <div class="item">F</div>
-      <div class="item">G</div>
-      <div class="item">Contéudo muito maior ainda</div>
-      <div class="item">I</div>
-      <div class="item">J</div>
-      <div class="item">K</div>
-      <div class="item">L</div>
-      <div class="item">M</div>
-      <div class="item">N</div>
-      <div class="item">O</div>
-      <div class="item">P</div>
-      <div class="item">Q</div>
-      <div class="item">R</div>
-      <div class="item">S</div>
-      <div class="item">T</div>
-      <div class="item">U</div>
-      <div class="item">V</div>
-      <div class="item">W</div>
-      <div class="item">X</div>
-      <div class="item">Y</div>
-      <div class="item">Z</div>
-      
-    </div>
-    <div class="container">
-
-      <div class="item">A</div>
-      <div class="item">Boutro conteúdo</div>
-      <div class="item">C</div>
-      <div class="item">D</div>
-      <div class="item">Conteúdo um pouco maior</div>
-      <div class="item">F</div>
-      <div class="item">G</div>
-      <div class="item">Contéudo muito maior ainda</div>
-      <div class="item">I</div>
-      <div class="item">J</div>
-      <div class="item">K</div>
-      <div class="item">L</div>
-      <div class="item">M</div>
-      <div class="item">N</div>
-      <div class="item">O</div>
-      <div class="item">P</div>
-      <div class="item">Q</div>
-      <div class="item">R</div>
-      <div class="item">S</div>
-      <div class="item">T</div>
-      <div class="item">U</div>
-      <div class="item">V</div>
-      <div class="item">W</div>
-      <div class="item">X</div>
-      <div class="item">Y</div>
-      <div class="item">Z</div>
-      
-    </div>
-    <div class="container">
-
-      <div class="item">A</div>
-      <div class="item">Boutro conteúdo</div>
-      <div class="item">C</div>
-      <div class="item">D</div>
-      <div class="item">Conteúdo um pouco maior</div>
-      <div class="item">F</div>
-      <div class="item">G</div>
-      <div class="item">Contéudo muito maior ainda</div>
-      <div class="item">I</div>
-      <div class="item">J</div>
-      <div class="item">K</div>
-      <div class="item">L</div>
-      <div class="item">M</div>
-      <div class="item">N</div>
-      <div class="item">O</div>
-      <div class="item">P</div>
-      <div class="item">Q</div>
-      <div class="item">R</div>
-      <div class="item">S</div>
-      <div class="item">T</div>
-      <div class="item">U</div>
-      <div class="item">V</div>
-      <div class="item">W</div>
-      <div class="item">X</div>
-      <div class="item">Y</div>
-      <div class="item">Z</div>
-      
-    </div>
-    
-
-    
-
   </body>
 </html>

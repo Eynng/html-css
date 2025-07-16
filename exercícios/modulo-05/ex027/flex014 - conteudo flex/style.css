@@ -13,6 +13,7 @@ body {
     line-height: 1.5em;
     width: 100vw;
     height: 100vh;
+    
 }
 
 p, h1, h2 {
@@ -21,23 +22,33 @@ p, h1, h2 {
 }
 
 header, section.normal {
+    
     padding: 20px;
 
 }
 
 section.flex-content {
-    padding: 20px;
-    background-color: rgba(73, 73, 73, 0.61);
-    flex-flow: row wrap;
-    display: flex;
-    border: 2px dotted rgb(86, 0, 247);
     
+    background-color: rgba(73, 73, 73, 0.61);
+    padding: 20px;
+    border: 2px dotted rgb(86, 0, 247);
+
+    flex-flow: column wrap;
+    display: flex;
 }
 
 article.media-text {
     flex-flow: column-reverse wrap;
     display: flex;
     border: 1px dotted rgb(0, 214, 0);
+}
+
+img {
+    border: 2px dotted black;
+    padding: 10px;
+    display: flex;
+    margin: auto;
+    
 }
 
 article.text-media {
@@ -50,5 +61,6 @@ article.text-media {
     border: 1px dotted black;
     flex: 1 1 auto;
     padding: 10px;
+}
 
 

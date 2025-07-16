@@ -16,51 +16,83 @@ body {
     
 }
 
-p, h1, h2 {
+p {
     margin-bottom: 10px;
     text-align: justify;
 }
 
+h1, h2 {
+    margin-bottom: 20px;
+    line-height: 1.2em;
+    text-align: left;
+}
+
 header, section.normal {
-    
     padding: 20px;
 
 }
+
+/* Pai Felxivel */
 
 section.flex-content {
     
     background-color: rgba(73, 73, 73, 0.61);
     padding: 20px;
-    border: 2px dotted rgb(86, 0, 247);
+
+    
 
     flex-flow: column wrap;
     display: flex;
 }
 
+
+
+/* Conteudos filhos Felxiveis */
+
 article.media-text {
-    flex-flow: column-reverse wrap;
+    flex-flow: row wrap-reverse;
     display: flex;
-    border: 1px dotted rgb(0, 214, 0);
+    
+    justify-content: space-between;
 }
 
-img {
-    border: 2px dotted black;
-    padding: 10px;
+
+article.text-media {
+    flex-flow: row wrap;
     display: flex;
-    margin: auto;
+    
+    justify-content: space-between;
+ }
+
+ /* Conteudos sub-filhos Felxiveis */
+
+ article > div.text {
+    
+    flex: 1 1 500px;
+    padding: 10px;
+    color: white;
+}
+
+article > div.media {
+    
+    flex: 1 0 500px;
     
 }
 
-article.text-media {
-    flex-flow: row nowrap;
-    display: flex;
-    border: 1px dotted rgb(230, 0, 0);
- }
-
- div.text {
-    border: 1px dotted black;
-    flex: 1 1 auto;
+div.media > img {
+    width: 300px;
+    margin: auto;
+    display: block;
     padding: 10px;
+    
 }
+
+div.media > iframe {
+    display: block;
+    margin: auto;
+    width: 90%;
+}
+
+
 
 

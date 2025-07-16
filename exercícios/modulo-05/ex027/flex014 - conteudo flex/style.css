@@ -28,6 +28,27 @@ header, section.normal {
 section.flex-content {
     padding: 20px;
     background-color: rgba(73, 73, 73, 0.61);
+    flex-flow: row wrap;
+    display: flex;
+    border: 2px dotted rgb(86, 0, 247);
+    
 }
+
+article.media-text {
+    flex-flow: column-reverse wrap;
+    display: flex;
+    border: 1px dotted rgb(0, 214, 0);
+}
+
+article.text-media {
+    flex-flow: row nowrap;
+    display: flex;
+    border: 1px dotted rgb(230, 0, 0);
+ }
+
+ div.text {
+    border: 1px dotted black;
+    flex: 1 1 auto;
+    padding: 10px;
 
 

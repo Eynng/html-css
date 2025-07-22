@@ -26,31 +26,41 @@
         header {
             background-color: rgb(255, 255, 255);
             text-align: center;
-            color: rgb(0, 177, 201);
             box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.404);
 
             padding:  10px;
             margin: 0px;
         }
+        header > h1 {
+            color: rgb(0, 177, 201);
+            
+        }
 
-        
+        /*CONTEUDOS FLEX*/
 
         section.principal {
 
-            width: 100%;
-            height: 100vh;
+
+            padding: 50px 0px;
+            margin: 0px;
 
             display: flex;
-            flex-flow: row nowrap;
-            justify-content: center;
-            align-items: center;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+        }
 
             
 
+        article.text-midia {
+
+            flex-flow: row wrap;
+            display: flex;
+    
+            justify-content: space-evenly;
+            align-items: center;
+
             padding: 0px;
-            margin:  0px;
-
-
+            margin: 0px;
         }
 
         div.container {
@@ -78,29 +88,27 @@
 
         }
 
-        div.texto > h1, div.texto > p {
+        /*CONTEUDOS FLEX*/
+
+        article > div.midia {
+    
+            flex: 0 1 auto;
+            padding: 10px;
             
-            flex: 1 1 auto;
-            
-            padding: 5px;
-            margin: 0px;
         }
 
-
-
-        div.imagem {
-
-            flex: 0 0 auto;
-            
-            padding: 0px;
-            margin: 0px;
-
-            
+        article > div.text {
+    
+            flex: 1 1 200px;
+            padding: 10px;
+            color: white;
         }
 
         h1 {
             font-family: Arial, Helvetica, sans-serif;
             font-size: 2.5em;
+            color: white;
+
             padding: 10px;
             margin: 0px;
         }
@@ -109,6 +117,7 @@
             font-family: Arial, Helvetica, sans-serif;
             font-size: 1em;
             color: white;
+
             padding: 5px;
             margin: 0px;
         }
@@ -190,50 +199,58 @@
     <main>
 
         <section class="principal">
-            <div class="texto">
-                <h1>O que é Grid Layout</h1>
-                <p>Flexbox e Grid Layout são ferramentas poderosas do CSS para criar layouts na web, mas com abordagens diferentes. Flexbox é ideal para layouts unidimensionais (linha ou coluna), enquanto Grid é mais adequado para layouts bidimensionais (linhas e colunas simultaneamente),. Flexbox foca no alinhamento e distribuição de espaço dentro de um único eixo, enquanto Grid oferece maior controle sobre o posicionamento dos elementos em duas dimensões. </p>
-            </div>
-            <div class="imagem">
-                <img class="imgP" src="image/grid-layout.png" alt="">
-            </div>
+
+            <article class="text-midia">
+
+                <div class="text">
+                    <h1>O que é Grid Layout</h1>
+                    <p>Flexbox e Grid Layout são ferramentas poderosas do CSS para criar layouts na web, mas com abordagens diferentes. Flexbox é ideal para layouts unidimensionais (linha ou coluna), enquanto Grid é mais adequado para layouts bidimensionais (linhas e colunas simultaneamente),. Flexbox foca no alinhamento e distribuição de espaço dentro de um único eixo, enquanto Grid oferece maior controle sobre o posicionamento dos elementos em duas dimensões. </p>
+                </div>
+
+                <div class="midia">
+                    <img class="imgP" src="image/grid-layout.png" alt="">
+                </div>
+
+            </article>
+
+            
         </section>
 
 
         <div class="container">
-            <a href="">
+            <a href="#">
                 <div class="item"><img src="image/site.png.png" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente recusandae aliquid porro laboriosam modi fugiat dolor pariatur expedita enim officia iste iusto voluptate exercitationem quia, ipsa adipisci hic architecto.</p></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente recusandae aliquid porro laboriosam modi fugiat dolor pariatur expedita enim officia iste iusto </p></div>
             </a>
-            <a href="">
+            <a href="#">
                 <div class="item"><img src="image/img 1.png" alt="">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente recusandae aliquid porro laboriosam modi fugiat dolor pariatur expedita enim officia iste iusto voluptate exercitationem quia, ipsa adipisci hic architecto.</p></div>
             </a>
-            <a href="">
+            <a href="#">
                 <div class="item"><img src="image/img 2.png" alt="">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente recusandae aliquid porro laboriosam modi fugiat dolor pariatur expedita enim officia iste iusto voluptate exercitationem quia, ipsa adipisci hic architecto.</p></div>
             </a>
-            <a href="">
+            <a href="#">
                 <div class="item"><img src="image/igm 3.png" alt="">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente recusandae aliquid porro laboriosam modi fugiat dolor pariatur expedita enim officia iste iusto voluptate exercitationem quia, ipsa adipisci hic architecto.</p></div>
             </a>
-            <a href="">
+            <a href="#">
                 <div class="item"><img src="image/img 4.png" alt="">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente recusandae aliquid porro laboriosam modi fugiat dolor pariatur expedita enim officia iste iusto voluptate exercitationem quia, ipsa adipisci hic architecto.</p></div>
             </a>
-            <a href="">
+            <a href="#">
                 <div class="item"><img src="image/img 5.png" alt="">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente recusandae aliquid porro laboriosam modi fugiat dolor pariatur expedita enim officia iste iusto voluptate exercitationem quia, ipsa adipisci hic architecto.</p></div>
             </a>
-            <a href="">
+            <a href="#">
                 <div class="item"><img src="image/img 6.png" alt="">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente recusandae aliquid porro laboriosam modi fugiat dolor pariatur expedita enim officia iste iusto voluptate exercitationem quia, ipsa adipisci hic architecto.</p></div>
             </a>
-            <a href="">
+            <a href="#">
                 <div class="item"><img src="image/img 7.png" alt="">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente recusandae aliquid porro laboriosam modi fugiat dolor pariatur expedita enim officia iste iusto voluptate exercitationem quia, ipsa adipisci hic architecto.</p></div>
             </a>
-            <a href="">
+            <a href="#">
                 <div class="item"><img src="image/site.png.png" alt="">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente recusandae aliquid porro laboriosam modi fugiat dolor pariatur expedita enim officia iste iusto voluptate exercitationem quia, ipsa adipisci hic architecto.</p></div>
             </a>

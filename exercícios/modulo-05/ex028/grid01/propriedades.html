@@ -16,33 +16,43 @@
             
         }
 
+        main {
+
+            
+            padding: 0px;
+            margin: 0px;
+        }
+
         header {
             background-color: rgb(255, 255, 255);
             text-align: center;
             color: rgb(0, 26, 255);
+            box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.479);
 
-            padding-top:  10px;
+            padding:  10px;
             margin: 0px;
         }
 
-        img.logo {
-            width: 150px;
-            height: 80px;
-            padding: 0px;
-            margin: 0px;
+        
+
+        section.principal {
+
             
-        }
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center; 
 
-        h1 {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 2.5em;
-            padding: 10px;
-            margin: 0px;
+            padding: 0px;
+            margin: 0px 0px;
+
+
         }
 
         div.container {
             
-            
+            padding: 0px;
+            margin: 50px 0px;
             
 
             display: grid;
@@ -50,7 +60,7 @@
 
             
             grid-template-rows: 100px 100px 100px ; /*Pode-se usar grid-template*/
-            grid-template-columns: auto auto auto ; /*Pode-se usar grid-template*/
+            grid-template-columns: 200px auto auto ; /*Pode-se usar grid-template*/
             grid-template: 100px 100px 100px / auto auto auto ;
 
             grid-auto-rows: 100px;         /*Grid implicitos fora do P*/
@@ -69,6 +79,35 @@
             
         }
 
+        div.texto > h1, div.texto > p {
+            
+            padding: 0px;
+            margin: 0px;
+        }
+
+
+
+        div.imagem {
+
+            padding: 0px;
+            margin: 0px;
+
+            
+        }
+
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2.5em;
+            padding: 10px;
+            margin: 0px;
+        }
+
+        p {
+            padding: 0px;
+            margin: 0px;
+        }
+
+
         div.item {
 
             
@@ -83,9 +122,33 @@
             
         }
 
+        /*IMAGENS DO SITE-->*/
+
         img {
             width: 130px;
             height: 100px;
+            
+        }
+
+        img.imgP {
+            width: 500px;
+            height: 300px;
+        }
+
+        img.logo {
+            width: 150px;
+            height: 80px;
+            padding: 0px;
+            margin: 0px;
+            
+        }
+
+        footer {
+            height: 1vh;
+            width: 100vw;
+            
+            text-align: center;
+            
             
         }
         
@@ -96,17 +159,21 @@
 <body>
 
     <header>
+
         <img class="logo" src="image/grid-layout.png" alt="">
         <h1>Grid Layout</h1>
+        
     </header>
 
     <main>
 
         <section class="principal">
-            <h1>O que é Grid Layout</h1>
-            <div>
-                <img src="image/grid-layout.png" alt="">
+            <div class="texto">
+                <h1>O que é Grid Layout</h1>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, ratione repudiandae hic necessitatibus at saepe blanditiis, quam sapiente placeat ipsam inventore, quod minus eaque labore quaerat doloribus eos nobis maiores.</p>
+            </div>
+            <div class="imagem">
+                <img class="imgP" src="image/grid-layout.png" alt="">
             </div>
         </section>
 
@@ -139,6 +206,9 @@
             </a>
         
         </div>
+
+        <footer>
+            <p>Desenvolvido por <a href="">Esdras Ramon</a> para fins educacionais.</p></footer>
     </main>
     
 </body>

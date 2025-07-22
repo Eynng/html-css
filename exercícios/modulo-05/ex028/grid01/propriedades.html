@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+
+        body {
+            background-color: blue;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1em;
+            color: white
+        }
+
+        div.container {
+            background-color: rgb(55, 0, 255);
+            border: 5px solid rgb(229, 255, 0);
+            
+
+            display: grid;
+            gap: 5px;
+
+            
+            grid-template-rows: 100px 100px 100px ; /*Pode-se usar grid-template*/
+            grid-template-columns: auto auto auto ; /*Pode-se usar grid-template*/
+            grid-template: 100px 100px 100px / auto auto auto ;
+
+            grid-auto-rows: 100px;         /*Grid implicitos fora do P*/
+            grid-auto-columns: 100px;      /*Grid implicitos fora do P*/
+    
+            align-items: normal;   /*Pode-se usar place-items*/
+            justify-items: normal; /*Pode-se usar place-items*/
+            place-items: normal normal;
+
+            
+
+            align-content: normal;   /*Pode-se usar place-contents*/
+            justify-content: normal; /*Pode-se usar place-contents*/
+            place-content: normal normal;
+
+            
+        }
+
+        div.item {
+            
+            background-color: rgb(25, 0, 255);
+            border: 2px dotted rgb(255, 255, 255);
+            text-align: center;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        
+        
+    </div>
+    
+</body>
+</html>

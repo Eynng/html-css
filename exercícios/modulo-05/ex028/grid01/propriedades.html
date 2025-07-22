@@ -7,19 +7,46 @@
     <style>
 
         body {
-            background-color: blue;
+            background-color: rgb(86, 103, 255);
             font-family: Arial, Helvetica, sans-serif;
             font-size: 1em;
-            color: white
+            color: white;
+            padding: 0px;
+            margin: 0px;
+            
+        }
+
+        header {
+            background-color: rgb(255, 255, 255);
+            text-align: center;
+            color: rgb(0, 26, 255);
+
+            padding-top:  10px;
+            margin: 0px;
+        }
+
+        img.logo {
+            width: 150px;
+            height: 80px;
+            padding: 0px;
+            margin: 0px;
+            
+        }
+
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2.5em;
+            padding: 10px;
+            margin: 0px;
         }
 
         div.container {
-            background-color: rgb(55, 0, 255);
-            border: 5px solid rgb(229, 255, 0);
+            
+            
             
 
             display: grid;
-            gap: 5px;
+            gap: 4px;
 
             
             grid-template-rows: 100px 100px 100px ; /*Pode-se usar grid-template*/
@@ -43,29 +70,76 @@
         }
 
         div.item {
+
             
-            background-color: rgb(25, 0, 255);
-            border: 2px dotted rgb(255, 255, 255);
+            border-radius: 0px;
+            
             text-align: center;
+
+        }
+
+        div.item:hover {
+            background-color: rgb(26, 202, 255);
             
         }
+
+        img {
+            width: 130px;
+            height: 100px;
+            
+        }
+        
+
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
-        <div class="item">H</div>
-        <div class="item">I</div>
+
+    <header>
+        <img class="logo" src="image/grid-layout.png" alt="">
+        <h1>Grid Layout</h1>
+    </header>
+
+    <main>
+
+        <section class="principal">
+            <h1>O que é Grid Layout</h1>
+            <div>
+                <img src="image/grid-layout.png" alt="">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, ratione repudiandae hic necessitatibus at saepe blanditiis, quam sapiente placeat ipsam inventore, quod minus eaque labore quaerat doloribus eos nobis maiores.</p>
+            </div>
+        </section>
+
+
+        <div class="container">
+            <a href=""><div class="item"><img src="image/site.png.png" alt=""></div></a>
+            <a href="">
+                <div class="item"><img src="image/img 1.png" alt=""></div>
+            </a>
+            <a href="">
+                <div class="item"><img src="image/img 2.png" alt=""></div>
+            </a>
+            <a href="">
+                <div class="item"><img src="image/igm 3.png" alt=""></div>
+            </a>
+            <a href="">
+                <div class="item"><img src="image/img 4.png" alt=""></div>
+            </a>
+            <a href="">
+                <div class="item"><img src="image/img 5.png" alt=""></div>
+            </a>
+            <a href="">
+                <div class="item"><img src="image/img 6.png" alt=""></div>
+            </a>
+            <a href="">
+                <div class="item"><img src="image/img 7.png" alt=""></div>
+            </a>
+            <a href="">
+                <div class="item"><img src="image/site.png.png" alt=""></div>
+            </a>
         
-        
-    </div>
+        </div>
+    </main>
     
 </body>
 </html>

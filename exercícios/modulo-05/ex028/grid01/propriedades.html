@@ -20,14 +20,14 @@
 
             
             padding: 0px;
-            margin: 0px;
+            margin: 0px 200px;
         }
 
         header {
             background-color: rgb(255, 255, 255);
             text-align: center;
-            color: rgb(0, 26, 255);
-            box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.479);
+            color: rgb(0, 177, 201);
+            box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.404);
 
             padding:  10px;
             margin: 0px;
@@ -37,14 +37,18 @@
 
         section.principal {
 
-            
+            width: 100%;
+            height: 100vh;
+
             display: flex;
-            flex-flow: column nowrap;
+            flex-flow: row nowrap;
             justify-content: center;
-            align-items: center; 
+            align-items: center;
+
+            
 
             padding: 0px;
-            margin: 0px 0px;
+            margin:  0px;
 
 
         }
@@ -52,36 +56,33 @@
         div.container {
             
             padding: 0px;
-            margin: 50px 0px;
+            margin: 0px;
             
-
             display: grid;
-            gap: 4px;
+            gap: 10px;
 
-            
-            grid-template-rows: 100px 100px 100px ; /*Pode-se usar grid-template*/
-            grid-template-columns: 200px auto auto ; /*Pode-se usar grid-template*/
-            grid-template: 100px 100px 100px / auto auto auto ;
+            grid-template-rows: 300px 300px 300px ; /*Pode-se usar grid-template*/
+            grid-template-columns: auto auto auto ; /*Pode-se usar grid-template*/
+            grid-template: 200px 200px 200px / auto auto auto ;
 
-            grid-auto-rows: 100px;         /*Grid implicitos fora do P*/
-            grid-auto-columns: 100px;      /*Grid implicitos fora do P*/
+            /*grid-auto-rows: 100px; */        /*Grid implicitos fora do P*/
+            /*grid-auto-columns: 100px;*/      /*Grid implicitos fora do P*/
     
             align-items: normal;   /*Pode-se usar place-items*/
             justify-items: normal; /*Pode-se usar place-items*/
             place-items: normal normal;
 
-            
-
             align-content: normal;   /*Pode-se usar place-contents*/
             justify-content: normal; /*Pode-se usar place-contents*/
             place-content: normal normal;
 
-            
         }
 
         div.texto > h1, div.texto > p {
             
-            padding: 0px;
+            flex: 1 1 auto;
+            
+            padding: 5px;
             margin: 0px;
         }
 
@@ -89,6 +90,8 @@
 
         div.imagem {
 
+            flex: 0 0 auto;
+            
             padding: 0px;
             margin: 0px;
 
@@ -103,53 +106,72 @@
         }
 
         p {
-            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1em;
+            color: white;
+            padding: 5px;
             margin: 0px;
         }
 
 
         div.item {
 
-            
+            flex: 1 1 auto;
             border-radius: 0px;
-            
             text-align: center;
 
         }
 
+
         div.item:hover {
             background-color: rgb(26, 202, 255);
+            transition: 1s;
             
         }
 
         /*IMAGENS DO SITE-->*/
 
         img {
-            width: 130px;
+            width: 100px;
             height: 100px;
             
         }
 
         img.imgP {
-            width: 500px;
-            height: 300px;
+            width: 650px;
+            height: 400px;
         }
 
         img.logo {
             width: 150px;
             height: 80px;
-            padding: 0px;
+
+            padding: 10px;
             margin: 0px;
-            
         }
 
         footer {
-            height: 1vh;
-            width: 100vw;
-            
-            text-align: center;
-            
-            
+            position: relative;
+            background-color: rgb(255, 255, 255);
+            text-align: center; 
+            color: rgb(0, 26, 255);
+        } 
+        footer > p {
+            font-size: 1em;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bolder;
+            color: rgb(0, 26, 255)
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(0, 177, 201);
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: rgb(0, 26, 255);
+            transition: 1s;
         }
         
 
@@ -161,7 +183,7 @@
     <header>
 
         <img class="logo" src="image/grid-layout.png" alt="">
-        <h1>Grid Layout</h1>
+        <h1>Flexbox & Grid Layout</h1>
         
     </header>
 
@@ -170,7 +192,7 @@
         <section class="principal">
             <div class="texto">
                 <h1>O que é Grid Layout</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, ratione repudiandae hic necessitatibus at saepe blanditiis, quam sapiente placeat ipsam inventore, quod minus eaque labore quaerat doloribus eos nobis maiores.</p>
+                <p>Flexbox e Grid Layout são ferramentas poderosas do CSS para criar layouts na web, mas com abordagens diferentes. Flexbox é ideal para layouts unidimensionais (linha ou coluna), enquanto Grid é mais adequado para layouts bidimensionais (linhas e colunas simultaneamente),. Flexbox foca no alinhamento e distribuição de espaço dentro de um único eixo, enquanto Grid oferece maior controle sobre o posicionamento dos elementos em duas dimensões. </p>
             </div>
             <div class="imagem">
                 <img class="imgP" src="image/grid-layout.png" alt="">
@@ -179,37 +201,48 @@
 
 
         <div class="container">
-            <a href=""><div class="item"><img src="image/site.png.png" alt=""></div></a>
             <a href="">
-                <div class="item"><img src="image/img 1.png" alt=""></div>
+                <div class="item"><img src="image/site.png.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente recusandae aliquid porro laboriosam modi fugiat dolor pariatur expedita enim officia iste iusto voluptate exercitationem quia, ipsa adipisci hic architecto.</p></div>
             </a>
             <a href="">
-                <div class="item"><img src="image/img 2.png" alt=""></div>
+                <div class="item"><img src="image/img 1.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente recusandae aliquid porro laboriosam modi fugiat dolor pariatur expedita enim officia iste iusto voluptate exercitationem quia, ipsa adipisci hic architecto.</p></div>
             </a>
             <a href="">
-                <div class="item"><img src="image/igm 3.png" alt=""></div>
+                <div class="item"><img src="image/img 2.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente recusandae aliquid porro laboriosam modi fugiat dolor pariatur expedita enim officia iste iusto voluptate exercitationem quia, ipsa adipisci hic architecto.</p></div>
             </a>
             <a href="">
-                <div class="item"><img src="image/img 4.png" alt=""></div>
+                <div class="item"><img src="image/igm 3.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente recusandae aliquid porro laboriosam modi fugiat dolor pariatur expedita enim officia iste iusto voluptate exercitationem quia, ipsa adipisci hic architecto.</p></div>
             </a>
             <a href="">
-                <div class="item"><img src="image/img 5.png" alt=""></div>
+                <div class="item"><img src="image/img 4.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente recusandae aliquid porro laboriosam modi fugiat dolor pariatur expedita enim officia iste iusto voluptate exercitationem quia, ipsa adipisci hic architecto.</p></div>
             </a>
             <a href="">
-                <div class="item"><img src="image/img 6.png" alt=""></div>
+                <div class="item"><img src="image/img 5.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente recusandae aliquid porro laboriosam modi fugiat dolor pariatur expedita enim officia iste iusto voluptate exercitationem quia, ipsa adipisci hic architecto.</p></div>
             </a>
             <a href="">
-                <div class="item"><img src="image/img 7.png" alt=""></div>
+                <div class="item"><img src="image/img 6.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente recusandae aliquid porro laboriosam modi fugiat dolor pariatur expedita enim officia iste iusto voluptate exercitationem quia, ipsa adipisci hic architecto.</p></div>
             </a>
             <a href="">
-                <div class="item"><img src="image/site.png.png" alt=""></div>
+                <div class="item"><img src="image/img 7.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente recusandae aliquid porro laboriosam modi fugiat dolor pariatur expedita enim officia iste iusto voluptate exercitationem quia, ipsa adipisci hic architecto.</p></div>
+            </a>
+            <a href="">
+                <div class="item"><img src="image/site.png.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente recusandae aliquid porro laboriosam modi fugiat dolor pariatur expedita enim officia iste iusto voluptate exercitationem quia, ipsa adipisci hic architecto.</p></div>
             </a>
         
         </div>
 
-        <footer>
-            <p>Desenvolvido por <a href="">Esdras Ramon</a> para fins educacionais.</p></footer>
     </main>
+    <footer>
+            <p>Desenvolvido por <a href="">Esdras Ramon</a> para fins educacionais.</p></footer>
     
 </body>
 </html>

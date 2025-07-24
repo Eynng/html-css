@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedades de itens para GRID</title>
+    <style>
+
+        body {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5em;
+        }
+
+        div.container {
+            border: 2px solid rgb(255, 255, 255);
+            display: grid;
+            grid-template-rows: repeat(3, 100px);
+            grid-template-columns: repeat(4, 1fr);
+            gap: 5px;
+        }
+
+        div.box1 {
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 5;
+            background-color: rgba(206, 206, 206, 0.534);
+            gap: 5px;
+        }
+
+        div.box2 {
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            background-color: royalblue;
+        }
+
+        div.box3 {
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 3;
+            grid-column-end: 5;
+            background-color: rgba(234, 0, 255, 0.534);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">GRAY</div>
+        <div class="box2">BLUE</div>
+        <div class="box3">PURPLE</div>
+    </div>
+    
+</body>
+</html>

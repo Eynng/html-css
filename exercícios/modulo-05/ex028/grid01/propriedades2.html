@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5em;
+            background-color: rgb(17, 0, 255);
+            color: white;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        div.container {
+
+            display: grid;
+            border: 8px solid rgb(255, 238, 0);
+            grid-template-columns: repeat(3, auto); /*auto auto auto*/
+            grid-template-rows: repeat(3, 100px); /*100px 100px 100px*/
+
+            grid-template: repeat(3, 100px) / repeat(3, auto);
+
+            height: 300px;
+            width: 300px;
+
+        }
+
+        div.items {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 5px dotted rgb(255, 255, 255);
+            text-align: center;
+
+            padding: 0px;
+            margin: 0px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items">A</div>
+        <div class="items">B</div>
+        <div class="items">C</div>
+        <div class="items">D</div>
+        <div class="items">E</div>
+        <div class="items">F</div>
+        <div class="items">G</div>
+    </div>
+    
+</body>
+</html>

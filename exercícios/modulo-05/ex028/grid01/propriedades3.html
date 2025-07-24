@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout 3</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5em;
+            background-color: rgb(17, 0, 255);
+            color: white;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        div.container {
+            display: grid;
+            border: 2px solid yellow;
+            grid-template-columns: 100px 20% repeat(2, 1fr);
+
+
+            height: 300px;
+            width: 1500px;
+        }
+
+        div.items {
+            border: 1px solid rgb(255, 238, 0);
+            
+            color: rgb(17, 0, 255);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+    </div>
+    
+</body>
+</html>
